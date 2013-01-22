@@ -1,0 +1,19 @@
+!!! 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.responsive.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/docs.css')
+    link(rel='stylesheet', href='/stylesheets/prettify.css')
+    link(rel='stylesheet', href='/stylesheets/konyali.css')
+    script(src='/javascripts/jquery.js')
+    script(src='/javascripts/bootstrap.js')
+  body
+    include partials/navbar
+    include partials/tab
+    include partials/content
+    block content
+    include partials/footer
+    
