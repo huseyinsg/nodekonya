@@ -1,0 +1,47 @@
+extend ../layout
+block content
+  .container-fluid.register-content
+    .row-fluid
+        .span9
+          form
+            legend Yeni Üyelik
+            .form-actions.span10
+              label(for='inputform') Ad
+              input#inputform.input-xxlarge(type='text')
+            .form-actions.span10
+              label(for='inputform') Soyad
+              input#inputform.input-xxlarge(type='text')
+            .form-actions.span10
+              label(for='inputform') E-posta Adresi
+              input#inputform.input-xxlarge(type='text')
+            .form-actions.span10
+              label(for='inputform') GSM
+              input#inputform.gsm.input-xxlarge(type='text', value='05')
+            .form-actions.span10
+              label(for='inputform') Şifre
+              input#inputform.input-xxlarge(type='text')
+            .form-actions.span10
+              label(for='inputform') Şifre(Tekrar)
+              input#inputform.input-xxlarge(type='text')
+            .form-actions.span10
+              label.checkbox
+                input(type='checkbox', checked='checked')
+                a.hatirla(href='#') Haber Grubuna Ekle
+            .form-actions.span10
+              img.securitytext(src='/images/indir.jpg')
+            .form-actions.span10
+              label(for='inputform') Güvenlik Kodu
+              input#inputform.security.input-xxlarge(type='text')
+            .form-actions.span10
+              input.onay.btn.btn-inverse.input-xxlarge(type='submit', value='Kayıt Ol')
+        .span3
+          ul.uyecontent
+            h3 Neden Üye Olmalıyım?
+            li Siparişlerimin durumunu takip edebileceğim.
+            li Üyelere özel kampanya ve indirimlerden yararlanacağım.
+            li İndirim ve kampanyaları e-bülten ile ilk ben duyacağım.
+            li Alışveriş listemi hazırlayabileceğim.
+          ul.uyecontent
+            h3 Zaten Üye misiniz?
+            li
+              a(href='/account/login', title='Üye Girişi') Üye Girişi →
